@@ -1,11 +1,33 @@
----
-layout: default
-title: 我的Blog
----
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-　　{% for post in site.posts %}
-　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　{% endfor %}
-</ul>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Efficient</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="container">
+    	<div class="hero-unit">
+    		<h1>高效率，无止境！</h1>
+    		<div class="controls controls-row">
+    			<h2 class="span2 text-error">要事第一</h2>
+    			<h2 class="span2 text-warning">马上行动</h2>
+    			<h2 class="span2 text-info">速战速决</h2>
+    			<h2 class="span3 text-success">劳逸结合</h2>
+    			<h2 class="span4 text-info">先付出再考虑回报</h2>
+    			<h2 class="span2 text-error">分享</h2>
+    		</div>
+    		<!-- <p>网银项目组 活动日期为：<span class="text-error">2013-03-02</span></p> -->
+        <br>
+    		<a class="btn btn-primary btn-large" href="plan.html">Plan &raquo;</a>
+    	</div>
+      <blockquote>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“有时候生活会用砖头砸你的头。一定不要失去信仰。我知道，唯一支撑我前进的东西就是：我爱我所做的事。‘你必须找到你所爱的东西’，这句话不仅适用于你的工作，也同样适用于你的恋爱。”</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“你的工作将构成你生活的大部分，而唯一能让你真正从工作中得到满足的办法就是爱你所做的事。假如你还没有找到它，继续找吧，不要停下脚步。同所有与心灵相关的东西一样，当你找到它时，你会知道的。而且就像那些美好的爱情一样，它会随着岁月的增长而越加醇美。”</p>
+        <small>乔布斯</small>
+      </blockquote>
+    </div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
